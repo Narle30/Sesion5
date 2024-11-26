@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Formulario de Contacto</h1>
+        <form>
+            <fieldset>Datos Personales
+            <Label for="nombre">Nombre:</Label>
+            <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su Email" required >
+         </fieldset>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su Telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+            
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais">
+                <option value="disable select">Selecciona tu pais</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
